@@ -1,0 +1,22 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+        ],
+        "baseColor.textureMap": "ancientgreatsword_difuso_256x256.jpg",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "normal.textureMap": "ancientgreatsword_bump_256x256.jpg",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.5
+    }
+}

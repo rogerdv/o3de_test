@@ -1,0 +1,22 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.color": [
+            0.009292744100093842,
+            0.008102540858089924,
+            0.009155413135886192,
+            1.0
+        ],
+        "baseColor.textureMap": "Textures/RogerKit_Techo_maderas_BaseMap_Utility - sRGB - Texture.jpg",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "normal.textureMap": "Textures/RogerKit_Techo_maderas_Normal_Utility - Raw.jpg",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.5527864098548889
+    }
+}

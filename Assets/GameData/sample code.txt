@@ -1,0 +1,32 @@
+ void AttackManagerComponent::SerializeThis2() const
+ {
+
+     AZStd::string jsonString;
+     AZ::IO::ByteContainerStream<AZStd::string> byteStream(&jsonString);
+     auto result = AZ::JsonSerializationUtils::SaveObjectToStream(this, byteStream);
+
+     if (result.IsSuccess())
+     {
+
+         AZ_Printf("MyComponent", "Serialized JSON with : %s", jsonString.c_str());
+     }
+     else
+     {
+         AZ_Error("MyComponent", false, "Failed to serialize the component to JSON: %s", result.GetError().c_str());
+     }
+
+     auto result2 = AZ::JsonSerializationUtils::SaveObjectToFile(this,"D:/O3DE-Projects/Projects/ProjectM/Assets/MyClass.json");
+     auto result3 = AZ::JsonSerializationUtils::ReadJsonFile("D:/O3DE-Projects/Projects/ProjectM/Assets/MyClass.json");
+
+     if (result3.IsSuccess())
+     {
+         rapidjson::StringBuffer buffer;
+         rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+         result3.GetValue().Accept(writer);
+
+         AZ_Printf("MyComponent", "JSON content: %s", buffer.GetString());
+     }
+     else
+     {
+         AZ_Error("MyComponent", false, "Failed to read the JSON file: %s", result3.GetError().c_str());
+     }

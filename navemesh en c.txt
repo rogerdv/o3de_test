@@ -1,0 +1,4 @@
+// From Gems\RecastNavigation\Code\Include\RecastNavigation\DetourNavigationBus.h
+
+RecastNavigation::DetourNavigationRequestBus::EventResult(waypoints, detourEntityId,
+    &RecastNavigation::DetourNavigationRequestBus::Events::FindPathBetweenPositions, position1, position2);

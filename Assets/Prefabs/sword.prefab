@@ -1,0 +1,210 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "sword",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 13137406215028234239
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 13001100001652054521
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 15000256963070845996,
+                "Child Entity Order": [
+                    "Entity_[710631584029]"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 13612559006998704417
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 18385582214187905163
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 8084892441752150438
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 15421704239369215373
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 15981763049137427630
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 18061056087256973307
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 14936249513234392844,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[710631584029]": {
+            "Id": "Entity_[710631584029]",
+            "Name": "sword",
+            "Components": {
+                "AZ::Render::EditorMeshComponent": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 15486919683043763858,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{719BFDEE-E377-53D0-AE0E-71466E01F37D}",
+                                    "subId": 283972986
+                                },
+                                "assetHint": "assets/models/sword/ancient greatsword.fbx.azmodel"
+                            }
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 6677551379046298462
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17111262542532354784
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11822152184707653172
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13087382375782669721,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 16053234334634296787
+                        },
+                        {
+                            "ComponentId": 15486919683043763858,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 1811258354755142857,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 905063973261113768,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4758555027045541047
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 1811258354755142857,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 113566746
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{5EB35B50-8981-5C8A-BAC0-725DD0BED2B3}"
+                                            },
+                                            "assetHint": "assets/models/sword/ancient_greatsword_ancientsgrtsw.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 2114066291575993767
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14167388916226243801
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9577977366582000837
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 905063973261113768,
+                    "ScriptComponent": {
+                        "Properties": {
+                            "Properties": [
+                                {
+                                    "$type": "AzFramework::ScriptPropertyGenericClass",
+                                    "id": 38496869,
+                                    "name": "ScriptEventAsset",
+                                    "value": {
+                                        "$type": "ScriptEventsAssetRef",
+                                        "value": {
+                                            "Asset": {
+                                                "assetId": {
+                                                    "guid": "{C8EB18C6-63AE-581D-B41C-621CAD92633B}"
+                                                },
+                                                "loadBehavior": "QueueLoad",
+                                                "assetHint": "assets/scriptevents/weaponcontrol.scriptevents"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "$type": "AzFramework::ScriptPropertyGenericClass",
+                                    "id": 2886606951,
+                                    "name": "Slot",
+                                    "value": {
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    }
+                                }
+                            ]
+                        },
+                        "Script": {
+                            "assetId": {
+                                "guid": "{A616C1EB-874E-5BA0-AE3F-D7B4A635B084}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scripts/game/weapon.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{A616C1EB-874E-5BA0-AE3F-D7B4A635B084}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scripts/game/weapon.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 16053234334634296787,
+                    "Parent Entity": "ContainerEntity",
+                    "Transform Data": {
+                        "Rotate": [
+                            179.99996948242188,
+                            10.000017166137695,
+                            70.00004577636719
+                        ],
+                        "UniformScale": 0.5
+                    }
+                }
+            }
+        }
+    }
+}

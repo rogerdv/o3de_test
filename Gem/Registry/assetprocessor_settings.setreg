@@ -1,0 +1,18 @@
+{
+    "Amazon": {
+        "AssetProcessor": {
+            "Settings": {
+                "ScanFolder keyw/Assets": {
+                    "watch": "@GEMROOT:keyw@/Assets",
+                    "recursive": 1,
+                    "order": 101
+                },
+                "ScanFolder keyw/Registry": {
+                    "watch": "@GEMROOT:keyw@/Registry",
+                    "recursive": 1,
+                    "order": 102
+                }
+            }
+        }
+    }
+}

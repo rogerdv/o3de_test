@@ -1,0 +1,45 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "Running",
+            "selectedRootBone": "RootNode",
+            "id": "{56A15949-07AC-557F-AFED-08C1596045C5}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.Woman:Hips"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "{41DCBEAB-203C-4A05-96FA-98E1D8A96FA1} ImportGroup"
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Models/Female/animations/Running_fbx.procprefab",
+            "id": "{EA790EC0-E98F-58A2-8F25-BAF0E2A33356}"
+        }
+    ]
+}

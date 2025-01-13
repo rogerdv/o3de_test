@@ -1,0 +1,93 @@
+<ObjectStream version="3">
+	<Class name="MotionSet" version="1" type="{FE63321D-3593-4214-AFA4-F620CDC17B9B}">
+		<Class name="AZStd::string" field="name" value="female_set" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+		<Class name="AZStd::unordered_map&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*, AZStd::hash&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;&gt;, AZStd::equal_to&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;&gt;, allocator&gt;" field="motionEntries" type="{7E795792-CEDD-52D6-ABCB-6EFC3BAF1CDA}">
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="idle-thoughtful head shake" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="idle-thoughtful head shake" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/idle-thoughtful head shake.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="kicking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="kicking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/kicking.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="stabbing" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="stabbing" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/stabbing.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="idle-cards" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="idle-cards" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/idle-cards.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="punching" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="punching" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/punching.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="idle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="idle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/idle.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="grenade throw" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="grenade throw" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/grenade throw.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="dying" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="dying" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/dying.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="standing melee attack downward" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="standing melee attack downward" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/standing melee attack downward.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="run" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="run" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/run.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="&lt;undefined&gt;" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="&lt;undefined&gt;" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair&lt;AZStd::basic_string&lt;char, AZStd::char_traits&lt;char&gt;, allocator&gt;, MotionSet::MotionEntry*&gt;" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="walking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="walking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="assets/models/female/animations/walking.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+		</Class>
+		<Class name="AZStd::vector&lt;MotionSet*, allocator&gt;" field="childSets" type="{69F77F3B-4CDE-5995-BDC6-341621DF9A6E}"/>
+	</Class>
+</ObjectStream>
+

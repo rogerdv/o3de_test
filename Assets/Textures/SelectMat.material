@@ -1,0 +1,13 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/BasePBR.materialtype",
+    "materialTypeVersion": 1,
+    "propertyValues": {
+        "baseColor.color": [
+            0.7179369926452637,
+            0.0042114900425076485,
+            0.0042114900425076485,
+            1.0
+        ],
+        "baseColor.textureMap": "select.png"
+    }
+}

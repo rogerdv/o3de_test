@@ -1,0 +1,55 @@
+{
+    "project_name": "keyw",
+    "version": "1.0.0",
+    "project_id": "{04D799C4-1A43-4A31-9FA8-DD8F95579F0B}",
+    "origin": "The primary repo for keyw goes here: i.e. http://www.mydomain.com",
+    "license": "What license keyw uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "display_name": "keyw",
+    "summary": "A short description of keyw.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "keyw"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de-sdk",
+    "external_subdirectories": [
+        "Gem"
+    ],
+    "restricted": "keyw",
+    "gem_names": [
+        "Atom",
+        "AudioSystem",
+        "Camera",
+        "CameraFramework",
+        "DebugDraw",
+        "DiffuseProbeGrid",
+        "EMotionFX",
+        "EditorPythonBindings",
+        "FastNoise",
+        "GameState",
+        "ImGui",
+        "LandscapeCanvas",
+        "LyShine",
+        "MiniAudio",
+        "PhysX",
+        "PrefabBuilder",
+        "PrimitiveAssets",
+        "RecastNavigation",
+        "RemoteTools",
+        "SaveData",
+        "ScriptCanvas",
+        "ScriptCanvasPhysics",
+        "ScriptEvents",
+        "StartingPointInput",
+        "Terrain",
+        "TextureAtlas",
+        "Vegetation",
+        "WhiteBox",
+        "keyw"
+    ],
+    "engine_version": "2.3.1",
+    "product_name": "The Key of the World",
+    "executable_name": "tkotw"
+}

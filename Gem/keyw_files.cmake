@@ -1,0 +1,23 @@
+
+set(FILES
+    Include/keyw/keywBus.h
+    Include/keyw/keywTypeIds.h
+    Include/keyw/CharacterInventory.h
+    Include/keyw/CharacterInventoryBus.h
+    Source/keywSystemComponent.cpp
+    Source/keywSystemComponent.h
+    Source/PlayerSystemComponent.cpp
+    Source/PlayerSystemComponent.h
+    Source/PlayerSystemComponentBus.h
+    Source/CharacterInventory.cpp
+    Source/Game/BaseItem.h
+    Source/Game/BaseItem.cpp
+    Source/Game/ItemWeapon.h
+    Source/Game/ItemArmor.h
+    Source/Game/ItemWeapon.cpp
+    Source/Game/ItemArmor.cpp
+    Source/Game/ItemLoader.h
+    Include/keyw/CharacterComponent.h
+    Source/CharacterComponent.cpp
+    Include/keyw/CharacterComponentBus.h
+)

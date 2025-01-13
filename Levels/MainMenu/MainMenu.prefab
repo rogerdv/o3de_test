@@ -1,0 +1,293 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Empty",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 16616931740997949210
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 2778716686621881360
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 1069995033707506449,
+                "Child Entity Order": [
+                    "Entity_[12181429521541]",
+                    "Entity_[497871936121]"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 4185413252280323606
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 4068240492793213930
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 1499221618774487829
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 10852705643903064770
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 12239744644494076517
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 17437522806552955660
+            },
+            "LocalViewBookmarkComponent": {
+                "$type": "LocalViewBookmarkComponent",
+                "Id": 3161883436430872146,
+                "LocalBookmarkFileName": "MainMenu_1730262005611448990.setreg"
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 4584354821622104079,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[12181429521541]": {
+            "Id": "Entity_[12181429521541]",
+            "Name": "Menu",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 6530171390756051776
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9306298795813211013
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11490209458055612793,
+                    "Child Entity Order": [
+                        "Entity_[455148848555]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5317861680192734546
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 17897865616997790723
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 12348964801139241506
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 5696008874351695999
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4672095993706115066
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 53483678157856119,
+                    "ScriptComponent": {
+                        "Properties": {
+                            "Properties": [
+                                {
+                                    "$type": "AzFramework::ScriptPropertyGenericClass",
+                                    "id": 1189813353,
+                                    "name": "LevelPrefab",
+                                    "value": {
+                                        "$type": "AzFramework::Scripts::SpawnableScriptAssetRef",
+                                        "value": {
+                                            "asset": {
+                                                "assetId": {
+                                                    "guid": "{95FF611F-51F5-5C8F-A1ED-556A6D992FE8}",
+                                                    "subId": 2026026195
+                                                },
+                                                "loadBehavior": "QueueLoad",
+                                                "assetHint": "levels/calesoni_castle/calesoni_castle.spawnable"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "$type": "AzFramework::ScriptPropertyGenericClass",
+                                    "id": 3932698192,
+                                    "name": "SpawnTicket",
+                                    "value": {
+                                        "$type": "AzFramework::EntitySpawnTicket"
+                                    }
+                                }
+                            ]
+                        },
+                        "Script": {
+                            "assetId": {
+                                "guid": "{7AC9F8D3-41FD-5157-90E0-B008689153AC}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scripts/ui/mainmenu.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{7AC9F8D3-41FD-5157-90E0-B008689153AC}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scripts/ui/mainmenu.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12521351227874003946,
+                    "Parent Entity": "ContainerEntity"
+                },
+                "UiCanvasAssetRefComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9010226884233498701,
+                    "m_template": {
+                        "$type": "UiCanvasAssetRefComponent",
+                        "CanvasAssetRef": {
+                            "AssetPath": "assets/ui/testbutton.uicanvas"
+                        },
+                        "IsAutoLoad": true
+                    }
+                }
+            }
+        },
+        "Entity_[455148848555]": {
+            "Id": "Entity_[455148848555]",
+            "Name": "ShowCursor",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 560069456675538680
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 2891507937000034169
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 12427448007232066850
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 789091235884805408
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 1062448394268441582
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 13612559540141622254
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 17717515905083588087
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 15049426422630143238
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 15366361538693147879,
+                    "ScriptComponent": {
+                        "Script": {
+                            "assetId": {
+                                "guid": "{CC89824D-3BD7-55D7-B465-6151504A25F3}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scripts/systems/displaymousecursor.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{CC89824D-3BD7-55D7-B465-6151504A25F3}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scripts/systems/displaymousecursor.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 542189775617123574,
+                    "Parent Entity": "Entity_[12181429521541]"
+                }
+            }
+        },
+        "Entity_[497871936121]": {
+            "Id": "Entity_[497871936121]",
+            "Name": "Init",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 12803823670537584622
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 3051695614772428877
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14141917890390183686
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1798774839720155687
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 17467549814312061846
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9299337093329196053
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 9531083859146748361
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4623539306665063686
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 13898573248539539055,
+                    "ScriptComponent": {
+                        "Script": {
+                            "assetId": {
+                                "guid": "{FF152251-C58A-5342-80DE-4A7898EE5C88}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scriptcanvas/gameinit_vm.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{FF152251-C58A-5342-80DE-4A7898EE5C88}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scriptcanvas/gameinit_vm.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 10204388763867249990,
+                    "Parent Entity": "ContainerEntity"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.textureMap": "../Female/young_lightskinned_female_diffuse2.png",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.5
+    }
+}

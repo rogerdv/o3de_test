@@ -1,0 +1,11 @@
+{
+    "materialType": "@gemroot:Terrain@/Assets/Materials/Terrain/TerrainDetailMaterial.materialtype",
+    "materialTypeVersion": 1,
+    "propertyValues": {
+        "baseColor.textureMap": "textures/Stylized_Ground_002_SD/Stylized_Ground_002_basecolor.png",
+        "normal.textureMap": "textures/Stylized_Ground_002_SD/Stylized_Ground_002_normal.png",
+        "occlusion.diffuseTextureMap": "textures/Stylized_Ground_002_SD/Stylized_Ground_002_ambientOcclusion.png",
+        "parallax.textureMap": "textures/Stylized_Ground_002_SD/Stylized_Ground_002_height.png",
+        "roughness.textureMap": "textures/Stylized_Ground_002_SD/Stylized_Ground_002_roughness.png"
+    }
+}

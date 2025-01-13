@@ -1,0 +1,31 @@
+[
+    {
+        "id": "Item 1",
+        "category": "Random",
+        "type": "cosa",
+        "equip": true,
+        "slot": "none",
+        "rarity": 0.9,
+        "weight": 1,
+        "asset": ""
+
+    },
+    {
+        "id": "Sword",
+        "category": "weapon",
+        "type": "weapon",
+        "damage": [ 10.0, 0.0, 0.0 ],
+        "rarity": 0.9,
+        "weight": 2,
+        "asset": "Assets/Prefabs/sword.prefab"
+    },
+    {
+        "id": "Heart shield",
+        "category": "armor",
+        "type": "armor",
+        "protection": [ 1.0, 0.0, 0.0 ],
+        "rarity": 0.8,
+        "weight": 2,
+        "asset": ""
+    }
+]

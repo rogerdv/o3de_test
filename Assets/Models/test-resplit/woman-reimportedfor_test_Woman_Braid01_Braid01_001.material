@@ -1,0 +1,16 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.textureMap": "../Female/braid01_diffuse.png",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "normal.textureMap": "../Female/braid_hair_dark_brown_nmap.jpg",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.039999961853027344
+    }
+}

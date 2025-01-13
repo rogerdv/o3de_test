@@ -1,0 +1,864 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "BaseSkel",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 581888651196362378
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 2194278999800472617
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 4191592653354795168,
+                "Child Entity Order": [
+                    "Entity_[25124721692854]"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 5611711510498611536
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 6288731061736053874
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 12773075815825959449
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 18336171131686190917
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 14035812159605136777
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 11094111182658434600
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 9148623457389192420,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[25098951889078]": {
+            "Id": "Entity_[25098951889078]",
+            "Name": "Torso",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 15349048962221783071,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{94CC08FF-6B4C-51C4-A105-AAE929568F33}",
+                            "subId": 408059381
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/torso01.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13709092166088232195
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018637365533538308
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14842279575834668898
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13053446212944373099
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11504244286461417397
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 16831037379159612798,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5060892652331403176
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14491115869997487145
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9205647666292007028
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 11557269635575369625,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        },
+        "Entity_[25103246856374]": {
+            "Id": "Entity_[25103246856374]",
+            "Name": "Feet",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 15349048962221783071,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{C3879CF6-382F-5A19-A9C4-B27ACE4D4596}",
+                            "subId": 1469504850
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/feet01.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13709092166088232195
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018637365533538308
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14842279575834668898
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13053446212944373099
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11504244286461417397
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 5520631514259977307,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5060892652331403176
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14491115869997487145
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9205647666292007028
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 11557269635575369625,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        },
+        "Entity_[25107541823670]": {
+            "Id": "Entity_[25107541823670]",
+            "Name": "Hands",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 15349048962221783071,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{59E76D37-80A5-5FA3-B6BC-8614FFBAF6B4}",
+                            "subId": 1032054357
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/hands01.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13709092166088232195
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018637365533538308
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14842279575834668898
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13053446212944373099
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11504244286461417397
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 16390047971182675254,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5060892652331403176
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14491115869997487145
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9205647666292007028
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 11557269635575369625,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        },
+        "Entity_[25111836790966]": {
+            "Id": "Entity_[25111836790966]",
+            "Name": "Arms",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 15349048962221783071,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{1CE1325A-B02D-5D55-9547-A1E1AA31CB54}",
+                            "subId": 566005158
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/arms01.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13709092166088232195
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018637365533538308
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14842279575834668898
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13053446212944373099
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11504244286461417397
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 12609269007743386633,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5060892652331403176
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14491115869997487145
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9205647666292007028
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 11557269635575369625,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        },
+        "Entity_[25116131758262]": {
+            "Id": "Entity_[25116131758262]",
+            "Name": "Head",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 5042118204509449607,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{5B794F27-801E-5A6D-83BF-B5E186391037}",
+                            "subId": 3646089003
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/head02-horned.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 6784168843882774877
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 1258637562486806685
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 10828612457894066568
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 10252925898180420023
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 18412316934791450102
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 11435842204557135431,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 17698498426342911167
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2827725721882046062
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 10320217093528934278
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 6214674620388853315,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        },
+        "Entity_[25120426725558]": {
+            "Id": "Entity_[25120426725558]",
+            "Name": "SlotWeapon",
+            "Components": {
+                "EditorAttachmentComponent": {
+                    "$type": "EditorAttachmentComponent",
+                    "Id": 13990039628643086289,
+                    "Target ID": "Entity_[25124721692854]",
+                    "Target Bone Name": "Woman:RightHand",
+                    "Position Offset": [
+                        0.0,
+                        0.009999999776482582,
+                        0.10000000149011612
+                    ],
+                    "Rotation Offset": [
+                        0.0,
+                        -10.0,
+                        0.0
+                    ]
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13124305735760649895
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8460630043512437646
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11339396408816734727
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11288989680106194631
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 442736174516726131
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 13477293409960173590
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16869547978981846094
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 10764486451821072681
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 8355175570205995350,
+                    "Parent Entity": "Entity_[25124721692854]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.4349946975708008,
+                            0.21172261238098145,
+                            0.8744125962257385
+                        ],
+                        "Rotate": [
+                            -125.8427963256836,
+                            18.493635177612305,
+                            55.79217529296875
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[25124721692854]": {
+            "Id": "Entity_[25124721692854]",
+            "Name": "BaseSkel",
+            "Components": {
+                "CharacterComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 4871345018602815352,
+                    "m_template": {
+                        "$type": "CharacterComponent",
+                        "Attributes": [
+                            16,
+                            12,
+                            15,
+                            14,
+                            12
+                        ],
+                        "Name": "Belina"
+                    }
+                },
+                "CharacterInventory": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 8262025281337321762,
+                    "m_template": {
+                        "$type": "CharacterInventory",
+                        "AttachmentPoints": [
+                            "Entity_[25120426725558]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                },
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 11534101567953606646,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{821056F6-310D-566C-818A-7CD7D1E59A77}",
+                            "subId": 2710977120
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/female/hipoly rigged-female_base.actor"
+                    },
+                    "AttachmentTarget": "",
+                    "RenderSkeleton": true,
+                    "RenderCharacter": false
+                },
+                "EditorAnimGraphComponent": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 13934599807442571735,
+                    "AnimGraphAsset": {
+                        "assetId": {
+                            "guid": "{392C5D5C-DC20-50B1-B321-A2BC80179A16}"
+                        },
+                        "assetHint": "assets/models/female/female.animgraph"
+                    },
+                    "MotionSetAsset": {
+                        "assetId": {
+                            "guid": "{F25C8A2D-7EB8-5B1F-92A5-5CFFF3A6D3BC}"
+                        },
+                        "assetHint": "assets/models/female/female.motionset"
+                    },
+                    "ActiveMotionSetName": "female_set",
+                    "DebugVisualization": true,
+                    "ParameterDefaults": {
+                        "Parameters": [
+                            {
+                                "$type": "AzFramework::ScriptPropertyNumber",
+                                "id": 4013832056,
+                                "name": "move"
+                            }
+                        ]
+                    }
+                },
+                "EditorCharacterControllerComponent": {
+                    "$type": "EditorCharacterControllerComponent",
+                    "Id": 11970432980961438680,
+                    "Configuration": {
+                        "entityId": "",
+                        "MaterialSlots": {
+                            "Slots": [
+                                {
+                                    "Name": "Entire object"
+                                }
+                            ]
+                        }
+                    },
+                    "ShapeConfig": {
+                        "Capsule": {
+                            "Height": 1.600000023841858,
+                            "Radius": 0.30000001192092896
+                        }
+                    }
+                },
+                "EditorDetourNavigationComponent": {
+                    "$type": "EditorDetourNavigationComponent",
+                    "Id": 9556287856801951764,
+                    "Navigation Mesh": ""
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11532826016628771298
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 18111358753080130322
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1198818069033984916,
+                    "Child Entity Order": [
+                        "Entity_[25116131758262]",
+                        "Entity_[25098951889078]",
+                        "Entity_[25111836790966]",
+                        "Entity_[25107541823670]",
+                        "Entity_[25129016660150]",
+                        "Entity_[25103246856374]",
+                        "Entity_[25120426725558]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 2904980808021868122,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 12937019027650435760
+                        },
+                        {
+                            "ComponentId": 1177439178616011331,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 8262025281337321762,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 11534101567953606646,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 13934599807442571735,
+                            "SortIndex": 4
+                        },
+                        {
+                            "ComponentId": 9556287856801951764,
+                            "SortIndex": 5
+                        },
+                        {
+                            "ComponentId": 4871345018602815352,
+                            "SortIndex": 6
+                        },
+                        {
+                            "ComponentId": 11970432980961438680,
+                            "SortIndex": 7
+                        },
+                        {
+                            "ComponentId": 7297607038378000604,
+                            "SortIndex": 8
+                        },
+                        {
+                            "ComponentId": 7710855228745134090,
+                            "SortIndex": 9
+                        }
+                    ]
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 7491062061852307551
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 1453100834283830986
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16042867092925173605
+                },
+                "EditorTagComponent": {
+                    "$type": "EditorTagComponent",
+                    "Id": 1177439178616011331,
+                    "Tags": [
+                        "NPC"
+                    ]
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 867417518996480888
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 7297607038378000604,
+                    "ScriptComponent": {
+                        "Properties": {
+                            "Properties": [
+                                {
+                                    "$type": "AzFramework::ScriptPropertyGenericClass",
+                                    "id": 2817783452,
+                                    "name": "Head",
+                                    "value": {
+                                        "$type": "EntityId",
+                                        "value": "Entity_[25116131758262]"
+                                    }
+                                },
+                                {
+                                    "$type": "AzFramework::ScriptPropertyString",
+                                    "id": 3499355933,
+                                    "name": "HeadMesh",
+                                    "value": "Assets/Models/fem-sections/head01.fbx"
+                                }
+                            ]
+                        },
+                        "Script": {
+                            "assetId": {
+                                "guid": "{97C3C263-56A6-5115-B242-A8B1359628FC}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scripts/game/charactermodelmanager.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{97C3C263-56A6-5115-B242-A8B1359628FC}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scripts/game/charactermodelmanager.luac"
+                    }
+                },
+                "ScriptEditorComponent_2": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 7710855228745134090,
+                    "ScriptComponent": {
+                        "Script": {
+                            "assetId": {
+                                "guid": "{60EE8D94-A1F5-52D5-9F29-3D358A9269B0}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/scripts/game/playercontroller.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{60EE8D94-A1F5-52D5-9F29-3D358A9269B0}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/scripts/game/playercontroller.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12937019027650435760,
+                    "Parent Entity": "ContainerEntity"
+                }
+            }
+        },
+        "Entity_[25129016660150]": {
+            "Id": "Entity_[25129016660150]",
+            "Name": "LEgs",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 15349048962221783071,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{54DA6FAE-C304-5BA8-A0CB-349D74F9EB4E}",
+                            "subId": 4057265971
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/models/fem-sections/legs01.actor"
+                    },
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[25124721692854]"
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 13709092166088232195
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018637365533538308
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14842279575834668898
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13053446212944373099
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11504244286461417397
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 9396038163265409378,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1112210921
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{52724B77-B95B-58C8-98A2-0C6E24664026}"
+                                            },
+                                            "assetHint": "assets/models/test-resplit/woman-reimportedfor_test_woman_body_young_caucasian_female2_001.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5060892652331403176
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14491115869997487145
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9205647666292007028
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 11557269635575369625,
+                    "Parent Entity": "Entity_[25124721692854]"
+                }
+            }
+        }
+    }
+}
