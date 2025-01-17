@@ -30,12 +30,12 @@ namespace keyw {
 	}
 
 	/*Equip the item in a character*/
-	void BaseItem::Equip() { //AZ::EntityId owner
+	void BaseItem::Equip([[maybe_unused]] AZ::EntityId owner) { //AZ::EntityId owner
 		AZ_Printf("BaseItem", "I have been equipped!!");
 	}
 
 	/*Use the item on a target*/
-	void BaseItem::Use() { //AZ::EntityId owner, AZ::EntityId target
+	void BaseItem::Use([[maybe_unused]] AZ::EntityId owner, [[maybe_unused]] AZ::EntityId target) { //AZ::EntityId owner, AZ::EntityId target
 		AZ_Printf("BaseItem", "Using %s", Id.c_str());
 	}
 

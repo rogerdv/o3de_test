@@ -12,10 +12,11 @@ namespace keyw {
 		~ItemWeapon();
 		static void Reflect(AZ::ReflectContext* context);
 
-		void Equip();
+		void Equip(AZ::EntityId owner);
 
 		AZStd::array<float, 5> Dmg;
 	private:
+		//AzFramework::EntitySpawnTicket SpawnTicket;
 
 	};
 

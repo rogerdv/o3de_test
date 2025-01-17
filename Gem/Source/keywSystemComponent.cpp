@@ -28,7 +28,9 @@ namespace keyw
 		);
 
 		////////////////////////////////////////////////////////////////////////////////////////////
-		void OnPlayerRegister() override {}
+		void OnPlayerRegister() override {
+			Call(FN_OnPlayerRegister);
+		}
 	};
 
 	void keywSystemComponent::Reflect(AZ::ReflectContext* context)

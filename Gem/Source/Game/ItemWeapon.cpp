@@ -21,8 +21,10 @@ namespace keyw {
 		}
 	}
 
-	void ItemWeapon::Equip() {
+	void ItemWeapon::Equip([[maybe_unused]] AZ::EntityId owner) {
 		AZ_Printf("ItemWeapon", "I have been equipped!!");
+		//auto spawnableSystem = AzFramework::SpawnableEntitiesInterface::Get();
+		//SpawnTicket = AzFramework::EntitySpawnTicket{  };
 	}
 
 }

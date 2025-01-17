@@ -13,7 +13,7 @@ namespace keyw {
 
 		static void Reflect(AZ::ReflectContext* context);
 
-		void Equip();
+		void Equip(AZ::EntityId owner);
 
 		AZStd::array<int, 5> Protection;
 	private:

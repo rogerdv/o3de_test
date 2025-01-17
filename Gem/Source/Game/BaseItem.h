@@ -1,7 +1,7 @@
 #pragma once
 
 #include <AzCore/std/string/string.h>
-
+#include <AzFramework/Spawnable/Spawnable.h>
 
 namespace keyw {
 	class BaseItem {
@@ -13,14 +13,15 @@ namespace keyw {
 
 		static void Reflect(AZ::ReflectContext* context);
 
-		virtual void Equip();
-		virtual void Use();
+		virtual void Equip(AZ::EntityId owner);
+		virtual void Use(AZ::EntityId owner, AZ::EntityId target);
 
 		//Item properties
 		AZStd::string Id;
 		AZStd::string Category; //globa item category (armor, consumable, weapon, component)
 		AZStd::string ItemType; //Specific item type: sword, shield
 		bool Equipable;
+		bool Stack=false;
 		AZStd::string PrefabAsset;
 		AZStd::string Slot;
 		

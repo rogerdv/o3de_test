@@ -1,17 +1,18 @@
 local GameplayInput = {
 	Properties = {
-		camera = {default = EntityId()},		
+		camera = {default = EntityId()},
+		pivot = {default = EntityId(), description="Camera pivot"},		
 		Navmesh = {default = EntityId()},
-		Start = {default = EntityId()},
-		UI = {default = EntityId()},
-		player = {default = EntityId(), description="Player avatar"},
+		Start = {default = EntityId(), description="Player starting point"},	
+		UI = {default = EntityId()},		
 		slot = {default = EntityId()},
 		weapon = {default = EntityId()},
 		wpref = {default=SpawnableScriptAssetRef(), description="Prefab reference"}
 	}
 }
 
---local player
+local player
+local PlayerStart
 
 function GameplayInput:OnActivate()
 	--val = keywRequestBus.Broadcast.GetValue()
@@ -25,12 +26,12 @@ function GameplayInput:OnActivate()
 	self.OnLClick = {}
 	Debug.Log("Gameplay activation")
 	
-	local PlayerStart = TransformBus.Event.GetWorldTranslation(self.Properties.Start)
-	TransformBus.Event.SetWorldTranslation(self.Properties.player, PlayerStart)
+	self.PlayerStart = TransformBus.Event.GetWorldTranslation(self.Properties.Start)
+	--TransformBus.Event.SetWorldTranslation(self.Properties.player, PlayerStart)
 	--GameEntityController.Event.SetNavmesh(self.player, self.Properties.Navmesh)
 	--CharacterInventoryBus.Event.ReceiveItem(self.Properties.player,"Sword")
 	--CharacterInventoryBus.Event.ReceiveItem(self.Properties.player,"Item 1")
-	local w=0
+	--local w=0
 	
 	--w=CharacterInventoryBus.Event.TotalWeight(self.Properties.player)
 		
@@ -88,7 +89,7 @@ function GameplayInput:OnActivate()
 					IngameUIEvent.Event.SetTargetInfo(self.Properties.UI, target, Hp/HpMax*100)
 					break
 				else
-					GameEntityController.Event.MoveTo(self.Properties.player, p.Position)					
+					GameEntityController.Event.MoveTo(self.player, p.Position)					
 				end --if Tag
 			end--for
 		end --if numhits			
@@ -101,7 +102,10 @@ end
 
 function GameplayInput:OnPlayerRegister()
 	Debug.Log("Player registered Notification")
-	--self.player = keywRequestBus.Broadcast.GetPlayerAvatar()
+	self.player = keywRequestBus.Broadcast.GetPlayerAvatar()
+	--Place camera and player in start point
+	TransformBus.Event.SetWorldTranslation(self.player, self.PlayerStart)	
+	TransformBus.Event.SetWorldTranslation(self.Properties.pivot, self.PlayerStart)
 end
 
 return GameplayInput

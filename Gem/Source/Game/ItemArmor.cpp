@@ -20,7 +20,7 @@ namespace keyw {
 		}
 	}
 
-	void ItemArmor::Equip() {
+	void ItemArmor::Equip([[maybe_unused]] AZ::EntityId owner) {
 
 	}
 

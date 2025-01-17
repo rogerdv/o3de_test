@@ -1,0 +1,11 @@
+[export_project]
+project.build.config = release
+archive.output.format = zip
+seedlist.paths = AssetBundling/SeedLists/*.seed
+option.build.assets = True
+option.build.tools = True
+default.level.names = calesoni_castle.prefab;MainMenu.prefab
+option.build.server.launcher = False
+option.build.unified.launcher = False
+additional.game.project.file.pattern.to.copy = *.json
+
