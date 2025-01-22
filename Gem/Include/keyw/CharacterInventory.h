@@ -38,7 +38,8 @@ namespace keyw {
 		static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& io_incompatible);
 
 		void ReceiveItem(const AZStd::string& ItemId);
-		void EquipByIndex(AZStd::string ItemId);
+		void EquipByIndex(AZStd::string ItemId, AZ::EntityId owner);
+		AZ::EntityId GetSlotAttach([[maybe_unused]] int SlotIndex);
 		//void EquipById(AZStd::string ItemId);
 		int TotalWeight();
 

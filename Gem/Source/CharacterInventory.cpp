@@ -3,6 +3,26 @@
 
 namespace keyw {
 
+	class InventoryNotificationsBusBehaviorHandler
+		: public InventoryNotificationsBus::Handler
+		, public AZ::BehaviorEBusHandler
+	{
+	public:
+		////////////////////////////////////////////////////////////////////////////////////////////
+		AZ_EBUS_BEHAVIOR_BINDER(InventoryNotificationsBusBehaviorHandler, "{4FC448DC-2C7B-4361-AD5A-C342BC6E4A72}", AZ::SystemAllocator
+			, OnItemEquipped, OnItemUsed
+		);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		void OnItemEquipped(AZStd::string item, AZ::EntityId owner) override {
+			Call(FN_OnItemEquipped, item, owner);
+		}
+
+		void OnItemUsed(AZStd::string item, AZ::EntityId owner, AZ::EntityId target) override {
+			Call(FN_OnItemUsed, item, owner, target);
+		 }
+	};
+
 	void CharacterInventory::Reflect(AZ::ReflectContext* reflection)
 	{
 		
@@ -28,10 +48,12 @@ namespace keyw {
 		if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflection)) {
 			behaviorContext->EBus<CharacterInventoryBus>("CharacterInventoryBus")
 				->Event("ReceiveItem", &CharacterInventoryBus::Events::ReceiveItem)
-				->Event("TotalWeight", &CharacterInventoryBus::Events::TotalWeight);
+				->Event("TotalWeight", &CharacterInventoryBus::Events::TotalWeight)
+				->Event("EquipByIndex", &CharacterInventoryBus::Events::EquipByIndex)
+				->Event("GetSlotAttach", &CharacterInventoryBus::Events::GetSlotAttach);
 
-			//behaviorContext->EBus<keywNotificationBus>("keywNotificationBus")
-			  //  ->Handler<keywNotificationBusBehaviorHandler>();
+			behaviorContext->EBus<InventoryNotificationsBus>("InventoryNotificationsBus")
+			    ->Handler<InventoryNotificationsBusBehaviorHandler>();
 		}
 	}
 
@@ -64,16 +86,18 @@ namespace keyw {
 		} //for
 		//Item not in inventory or is not stackable
 		InvElement* elem=new InvElement();
+		elem->ElementId = ItemId;
 		elem->item = new BaseItem();
 		
 		keywRequestBus::BroadcastResult(elem->item, &keywRequestBus::Events::GetItem, ItemId);
 		
-		AZ_Printf("ItemLoader", "Received Item ID: %s", elem->item->Id.c_str());
+		//AZ_Printf("ItemLoader", "Received Item ID: %s", elem->item->Id.c_str());
 		items.push_back(elem);	
 
 	}
 
-	void CharacterInventory::EquipByIndex(AZStd::string ItemIndex) {
+	void CharacterInventory::EquipByIndex(AZStd::string ItemIndex, AZ::EntityId owner) {
+		AZ_Printf("Inventory", "Equip %s in entity %d==%d", ItemIndex.c_str(), GetEntityId(), owner);
 		//first, find the item
 		for (const auto& element : items) {
 			if (element->ElementId == ItemIndex) {
@@ -82,7 +106,7 @@ namespace keyw {
 					//TODO, unequip
 				}
 				EquipSlots[element->item->Slot] = element->ElementId;
-				element->item->Equip(GetEntityId());
+				element->item->Equip(owner);
 			}
 		}
 	}
@@ -91,11 +115,16 @@ namespace keyw {
 	int CharacterInventory::TotalWeight() {
 		int weight = 0;
 		for (const auto& element : items) {
-			AZ_Printf("Inventory", "Item: %s, weight: %d", element->item->Id.c_str(), element->item->Weight);
+			//AZ_Printf("Inventory", "Item: %s, weight: %d", element->item->Id.c_str(), element->item->Weight);
 			weight=weight+element->item->Weight*element->amount;
 		}
-		AZ_Printf("Inventory", "Total weigth counted: %d", weight);
+		//AZ_Printf("Inventory", "Total weigth counted: %d", weight);
 		return weight;		
+	}
+
+	//Temporary, return first attachment always
+	AZ::EntityId CharacterInventory::GetSlotAttach([[maybe_unused]] int SlotIndex) {
+		return AttachPoints[0];
 	}
 	
 

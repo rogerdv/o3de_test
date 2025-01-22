@@ -11,7 +11,7 @@ local PlayerAvatarRegistrar =
 function PlayerAvatarRegistrar:OnActivate()
     -- Activation Code
     keywRequestBus.Broadcast.RegisterPlayerAvatar(self.entityId)
-    Debug.Log("Registering player avatar")
+    Debug.Log("Registering player avatar id: "..tostring(self.entityId))
 end
 
 function PlayerAvatarRegistrar:OnDeactivate()

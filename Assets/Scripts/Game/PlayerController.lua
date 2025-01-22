@@ -8,6 +8,8 @@ local PlayerController = {
 	
 }
 
+require("Assets.Scripts.EquipTest")
+
 local path 
 local PathIndex
 local moving = false
@@ -15,6 +17,8 @@ local moving = false
 function PlayerController:OnActivate()
 	self.TickBusHandler = TickBus.Connect(self)		
 	self.controller = GameEntityController.Connect(self, self.entityId)
+	--self.inventory = InventoryNotificationsBus.Connect(self)
+	self.ItemManage = ItemNotificationsBus.Connect(self, self.entityId)
 	
 end
 
@@ -57,7 +61,7 @@ function PlayerController:OnTick(dt, time)
 end --tick
 
 function PlayerController:OnDeactivate()
-
+	self.TickBusHandler:Disconnect()
 end
 
 function PlayerController:MoveTo(pos)
@@ -77,6 +81,16 @@ end
 
 function PlayerController:SetNavmesh(NavmeshEntity)
 	DetourNavigationRequestBus.Event.SetNavigationMeshEntity(self.entityId, NavmeshEntity)
+end
+
+function PlayerController:OnItemEquipped(ItemId)
+	Debug.Log("Script received item equipped event for "..ItemId.." and my Id is "..tostring(self.entityId))
+	local me = CharacterComponentBus.Event.GetName(self.entityId)
+	Debug.Log("And my name is "..me)
+	item = keywRequestBus.Broadcast.GetItem(ItemId)
+	Debug.Log(item.TestSc)
+	local fname = item.TestSc
+	fname()
 end
 
 return PlayerController

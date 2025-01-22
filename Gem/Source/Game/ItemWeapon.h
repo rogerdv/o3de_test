@@ -1,6 +1,11 @@
 #pragma once
 
 #include "BaseItem.h"
+#include <AzFramework/Spawnable/Spawnable.h>
+#include <AzFramework/Spawnable/Script/SpawnableScriptMediator.h>
+#include <AzFramework/Spawnable/SpawnableEntitiesInterface.h>
+#include <AzFramework/Asset/AssetCatalog.h>
+
 
 namespace keyw {
 
@@ -15,8 +20,13 @@ namespace keyw {
 		void Equip(AZ::EntityId owner);
 
 		AZStd::array<float, 5> Dmg;
+		AZStd::string EquipScript = "assets/scripts/EquipTest.lua";
+
+		AzFramework::Scripts::SpawnableScriptMediator mediator;
+		AzFramework::EntitySpawnTicket SpawnTicket;
+
 	private:
-		//AzFramework::EntitySpawnTicket SpawnTicket;
+		
 
 	};
 

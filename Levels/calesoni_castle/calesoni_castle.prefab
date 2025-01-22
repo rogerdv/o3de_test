@@ -6416,11 +6416,11 @@
                                 },
                                 {
                                     "$type": "AzFramework::ScriptPropertyGenericClass",
-                                    "id": 2551806565,
-                                    "name": "player",
+                                    "id": 2628745716,
+                                    "name": "pivot",
                                     "value": {
                                         "$type": "EntityId",
-                                        "value": "Entity_[403930081261356]"
+                                        "value": "Entity_[3197065586570]"
                                     }
                                 },
                                 {
@@ -14511,7 +14511,7 @@
                     "Id": 11961998840173588402,
                     "m_template": {
                         "$type": "CharacterComponent",
-                        "Name": "Vergonia"
+                        "Name": "Yo soy Player"
                     }
                 },
                 "CharacterInventory": {
@@ -14693,8 +14693,7 @@
                                         "value": {
                                             "Asset": {
                                                 "assetId": {
-                                                    "guid": "{FAA442DC-1D44-5F47-BCBD-A2E1F8531BBF}",
-                                                    "subId": 0
+                                                    "guid": "{FAA442DC-1D44-5F47-BCBD-A2E1F8531BBF}"
                                                 },
                                                 "loadBehavior": "QueueLoad",
                                                 "assetHint": "assets/scriptevents/gameentitycontroller.scriptevents"
@@ -15890,8 +15889,7 @@
                                         "value": {
                                             "Asset": {
                                                 "assetId": {
-                                                    "guid": "{AC9E936C-9530-5130-A38F-ACC1CB4522C6}",
-                                                    "subId": 0
+                                                    "guid": "{AC9E936C-9530-5130-A38F-ACC1CB4522C6}"
                                                 },
                                                 "loadBehavior": "QueueLoad",
                                                 "assetHint": "assets/scriptevents/ingameuievent.scriptevents"

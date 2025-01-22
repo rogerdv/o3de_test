@@ -18,38 +18,33 @@ function GameplayInput:OnActivate()
 	--val = keywRequestBus.Broadcast.GetValue()
 	
 	--Debug.Log("Value from sys component "..tostring(val))
-	--keywRequestBus.Broadcast.InitItemDb()
+	keywRequestBus.Broadcast.InitItemDb()
 	--self.NavHandler = Navmesh.
 	self.keywNot = keywNotificationBus.Connect(self)
 	
 	self.OnRClick = {}
 	self.OnLClick = {}
-	Debug.Log("Gameplay activation")
+	--Debug.Log("Gameplay activation")
 	
 	self.PlayerStart = TransformBus.Event.GetWorldTranslation(self.Properties.Start)
 	--TransformBus.Event.SetWorldTranslation(self.Properties.player, PlayerStart)
 	--GameEntityController.Event.SetNavmesh(self.player, self.Properties.Navmesh)
-	--CharacterInventoryBus.Event.ReceiveItem(self.Properties.player,"Sword")
-	--CharacterInventoryBus.Event.ReceiveItem(self.Properties.player,"Item 1")
-	--local w=0
 	
-	--w=CharacterInventoryBus.Event.TotalWeight(self.Properties.player)
 		
-	--Debug.Log("Player has "..tostring(w).." in the inventory") 
-		
-	self.OnRClick.OnPressed = function(_, value)						
+	self.OnRClick.OnPressed = function(_, value)	
+		CharacterInventoryBus.Event.EquipByIndex(self.player, "Sword", self.player)					
 		--TargetEvent.Event.TargetCall(self.Properties.target, 125)
 		--local asset =ItemWeapon()
-		asset = keywRequestBus.Broadcast.GetItem("Sword")
-		Debug.Log("Item dmg "..tostring(asset.Dmg[1]))
-		asset:Equip()	
+		--asset = keywRequestBus.Broadcast.GetItem("Sword")
+		--Debug.Log("Item dmg "..tostring(asset.Dmg[1]))
+		--asset:Equip()	
 		
 		--WeaponControl.Event.Equip(self.Properties.weapon, self.Properties.slot)
-		self.SpawnMediator = SpawnableScriptMediator()
+		--self.SpawnMediator = SpawnableScriptMediator()
 		--self.SpawnTicket = self.SpawnMediator:CreateSpawnTicket(self.Properties.wpref)
-		self.SpawnTicket = self.SpawnMediator:CreateSpawnTicket(self.Properties.wpref)
-		self.SpawnableListener = SpawnableScriptNotificationsBus.Connect(self, self.SpawnTicket:GetId())
-		self.SpawnMediator:SpawnAndParent(self.SpawnTicket, self.Properties.slot)		
+		--self.SpawnTicket = self.SpawnMediator:CreateSpawnTicket(self.Properties.wpref)
+		--self.SpawnableListener = SpawnableScriptNotificationsBus.Connect(self, self.SpawnTicket:GetId())
+		--self.SpawnMediator:SpawnAndParent(self.SpawnTicket, self.Properties.slot)		
 		
 	end
 	
@@ -100,12 +95,21 @@ function GameplayInput:OnActivate()
 	self.LClickInputHandler = InputEventNotificationBus.Connect(self.OnLClick, InputEventNotificationId("LClick"))
 end
 
-function GameplayInput:OnPlayerRegister()
-	Debug.Log("Player registered Notification")
+function GameplayInput:OnPlayerRegister()	
 	self.player = keywRequestBus.Broadcast.GetPlayerAvatar()
+	Debug.Log("Player entity Id is "..tostring(self.player))
 	--Place camera and player in start point
 	TransformBus.Event.SetWorldTranslation(self.player, self.PlayerStart)	
 	TransformBus.Event.SetWorldTranslation(self.Properties.pivot, self.PlayerStart)
+	CharacterInventoryBus.Event.ReceiveItem(self.player,"Sword")
+	CharacterInventoryBus.Event.ReceiveItem(self.player,"Item 1")
+	local w=0
+	
+	w=CharacterInventoryBus.Event.TotalWeight(self.player)
+		
+	Debug.Log("Player has "..tostring(w).." in the inventory") 
+	
+	
 end
 
 return GameplayInput

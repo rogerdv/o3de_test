@@ -39,9 +39,7 @@ namespace keyw {
 		static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
 
 		//! EBus Trait: save data notifications can be handled by multiple listeners
-		static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multiple;
-
-		//virtual void OnLevelLoaded(LevelData levelData) = 0;
+		static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multiple;		
 	};
 	using PlayerSystemComponentNotificationBus = AZ::EBus<PlayerSystemComponentNotifications>;
 	

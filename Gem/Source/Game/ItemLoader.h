@@ -75,7 +75,8 @@ namespace keyw {
             }
             it.Dmg = { 10,1,1,1,0 };
         }
-
+        
+        // PArse values common to all items
         void ParseCommon(const rapidjson_ly::Value& itemValue, BaseItem& item) {
             item.Id = itemValue["id"].GetString();
             item.Category = itemValue["category"].GetString();
@@ -87,6 +88,9 @@ namespace keyw {
             if (itemValue.HasMember("weight"))
             {
                 item.Weight = itemValue["weight"].GetInt();
+            }
+            if (itemValue.HasMember("equip_event")) {
+                item.TestSc = itemValue["equip_event"].GetString();
             }
             item.Rarity = itemValue["rarity"].GetFloat();
         }
