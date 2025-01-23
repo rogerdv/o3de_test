@@ -8,8 +8,6 @@ local PlayerController = {
 	
 }
 
-require("Assets.Scripts.EquipTest")
-
 local path 
 local PathIndex
 local moving = false
@@ -84,13 +82,13 @@ function PlayerController:SetNavmesh(NavmeshEntity)
 end
 
 function PlayerController:OnItemEquipped(ItemId)
-	Debug.Log("Script received item equipped event for "..ItemId.." and my Id is "..tostring(self.entityId))
+	--Debug.Log("Script received item equipped event for "..ItemId.." and my Id is "..tostring(self.entityId))
 	local me = CharacterComponentBus.Event.GetName(self.entityId)
-	Debug.Log("And my name is "..me)
+	--Debug.Log("And my name is "..me)
 	item = keywRequestBus.Broadcast.GetItem(ItemId)
-	Debug.Log(item.TestSc)
-	local fname = item.TestSc
-	fname()
+	--Debug.Log(item.TestSc)
+			
+	
 end
 
 return PlayerController

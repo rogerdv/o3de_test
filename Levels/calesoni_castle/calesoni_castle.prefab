@@ -28,13 +28,13 @@
                     "Instance_[22374884038150]/ContainerEntity",
                     "Instance_[22404948809222]/ContainerEntity",
                     "Entity_[1317099096884]",
-                    "",
                     "Entity_[20150530689844]",
                     "Entity_[8310073540211]",
                     "Instance_[25090361954486]/ContainerEntity",
                     "Entity_[115336214778038]",
                     "Entity_[8950406181142]",
-                    "Entity_[272065995339564]"
+                    "Entity_[272065995339564]",
+                    "Entity_[403930081261356]"
                 ]
             },
             "EditorInspectorComponent": {
@@ -6138,6 +6138,60 @@
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 4327281353862807342,
                     "Parent Entity": "Entity_[8310073540211]"
+                }
+            }
+        },
+        "Entity_[24054702196201]": {
+            "Id": "Entity_[24054702196201]",
+            "Name": "Slots",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16982582941852609223
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12806868815025281068
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17093571464601255187,
+                    "Child Entity Order": [
+                        "Entity_[403938671195948]",
+                        "Entity_[8949302216169]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 17293609964499905155
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 8630523383711982327
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3630170807992564947
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12463000809938799912
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 10229922503741830854
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 13390406390812513920,
+                    "Parent Entity": "Entity_[403930081261356]",
+                    "Transform Data": {
+                        "Translate": [
+                            -16.66543197631836,
+                            -12.002254486083984,
+                            -2.384185791015625e-7
+                        ]
+                    }
                 }
             }
         },
@@ -14521,7 +14575,7 @@
                         "$type": "CharacterInventory",
                         "AttachmentPoints": [
                             "Entity_[403938671195948]",
-                            "",
+                            "Entity_[8949302216169]",
                             "",
                             "",
                             "",
@@ -14618,7 +14672,7 @@
                         "Entity_[403934376228652]",
                         "Entity_[403947261130540]",
                         "Entity_[403951556097836]",
-                        "Entity_[403938671195948]"
+                        "Entity_[24054702196201]"
                     ]
                 },
                 "EditorInspectorComponent": {
@@ -14693,7 +14747,8 @@
                                         "value": {
                                             "Asset": {
                                                 "assetId": {
-                                                    "guid": "{FAA442DC-1D44-5F47-BCBD-A2E1F8531BBF}"
+                                                    "guid": "{FAA442DC-1D44-5F47-BCBD-A2E1F8531BBF}",
+                                                    "subId": 0
                                                 },
                                                 "loadBehavior": "QueueLoad",
                                                 "assetHint": "assets/scriptevents/gameentitycontroller.scriptevents"
@@ -14835,12 +14890,12 @@
         },
         "Entity_[403938671195948]": {
             "Id": "Entity_[403938671195948]",
-            "Name": "SlotWeapon",
+            "Name": "SlWeapon",
             "Components": {
                 "EditorAttachmentComponent": {
                     "$type": "EditorAttachmentComponent",
                     "Id": 10488315877253083699,
-                    "Target ID": "",
+                    "Target ID": "Entity_[403930081261356]",
                     "Target Bone Name": "Woman:RightHand",
                     "Position Offset": [
                         0.0,
@@ -14888,12 +14943,12 @@
                 "TransformComponent": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 10752876410356599233,
-                    "Parent Entity": "Entity_[403930081261356]",
+                    "Parent Entity": "Entity_[24054702196201]",
                     "Transform Data": {
                         "Translate": [
-                            0.4350000023841858,
-                            0.21199999749660492,
-                            0.8740000128746033
+                            17.100427627563477,
+                            12.213976860046387,
+                            0.8744128346443176
                         ],
                         "Rotate": [
                             -125.8427963256836,
@@ -15170,7 +15225,8 @@
                         "loadBehavior": "QueueLoad",
                         "assetHint": "assets/models/fem-sections/head01.actor"
                     },
-                    "AttachmentTarget": ""
+                    "AttachmentType": 2,
+                    "AttachmentTarget": "Entity_[403930081261356]"
                 },
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -15889,7 +15945,8 @@
                                         "value": {
                                             "Asset": {
                                                 "assetId": {
-                                                    "guid": "{AC9E936C-9530-5130-A38F-ACC1CB4522C6}"
+                                                    "guid": "{AC9E936C-9530-5130-A38F-ACC1CB4522C6}",
+                                                    "subId": 0
                                                 },
                                                 "loadBehavior": "QueueLoad",
                                                 "assetHint": "assets/scriptevents/ingameuievent.scriptevents"
@@ -17943,6 +18000,72 @@
                             5.423969268798828,
                             -4.856513977050781,
                             1.4557815790176392
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[8949302216169]": {
+            "Id": "Entity_[8949302216169]",
+            "Name": "SlHead",
+            "Components": {
+                "EditorAttachmentComponent": {
+                    "$type": "EditorAttachmentComponent",
+                    "Id": 2150267308342260220,
+                    "Target ID": "Entity_[403930081261356]",
+                    "Target Bone Name": "Woman:Head",
+                    "Position Offset": [
+                        0.0,
+                        0.0,
+                        0.10000000149011612
+                    ]
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11527928903670911957
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 14660885650746562080
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14059977349972465881
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11931651119529910223
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 13735097547025328068
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 8977921509288034182
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14106286484973185180
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16625482687154386612
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 9609107381553141790,
+                    "Parent Entity": "Entity_[24054702196201]",
+                    "Transform Data": {
+                        "Translate": [
+                            16.66543197631836,
+                            12.030189514160156,
+                            1.4583030939102173
+                        ],
+                        "Rotate": [
+                            -2.13443399843527e-7,
+                            0.0,
+                            0.0
                         ]
                     }
                 }

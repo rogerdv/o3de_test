@@ -97,7 +97,7 @@ namespace keyw {
 	}
 
 	void CharacterInventory::EquipByIndex(AZStd::string ItemIndex, AZ::EntityId owner) {
-		AZ_Printf("Inventory", "Equip %s in entity %d==%d", ItemIndex.c_str(), GetEntityId(), owner);
+		//AZ_Printf("Inventory", "Equip %s in entity %d==%d", ItemIndex.c_str(), GetEntityId(), owner);
 		//first, find the item
 		for (const auto& element : items) {
 			if (element->ElementId == ItemIndex) {
@@ -124,8 +124,18 @@ namespace keyw {
 
 	//Temporary, return first attachment always
 	AZ::EntityId CharacterInventory::GetSlotAttach([[maybe_unused]] int SlotIndex) {
-		return AttachPoints[0];
+		for (int i = 0; i < 9;i++) {
+			AZ_Printf("Inventory", "Slot entity # %d id: %d", i, AttachPoints[i]);
+		}
+		return AttachPoints[SlotIndex];
 	}
+
+	/*BaseItem* CharacterInventory::GetItem(AZStd::string ItemIndex) {
+		for (const auto& element : items) {
+			if (element->ElementId == ItemIndex) {
+				return element->item;
+			}
+	}*/
 	
 
 }

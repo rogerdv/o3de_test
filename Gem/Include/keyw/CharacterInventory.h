@@ -1,6 +1,6 @@
 #pragma once
 
-#include <keyw/CharacterInventoryBus.h>
+
 #include <AzCore/Component/Component.h>
 #include <AzCore/Component/EntityBus.h>
 
@@ -8,6 +8,7 @@
 
 
 #include "Game/BaseItem.h"
+#include <keyw/CharacterInventoryBus.h>
 #include <keyw/keywBus.h>
 
 
@@ -40,6 +41,7 @@ namespace keyw {
 		void ReceiveItem(const AZStd::string& ItemId);
 		void EquipByIndex(AZStd::string ItemId, AZ::EntityId owner);
 		AZ::EntityId GetSlotAttach([[maybe_unused]] int SlotIndex);
+		//BaseItem* GetItem(AZStd::string ItemIndex);
 		//void EquipById(AZStd::string ItemId);
 		int TotalWeight();
 

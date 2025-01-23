@@ -38,8 +38,9 @@ namespace keyw {
 		//auto spawnableSystem = AzFramework::SpawnableEntitiesInterface::Get();
 		SpawnTicket = mediator.CreateSpawnTicket(spawnableScriptAssetRef); //AzFramework::EntitySpawnTicket{ spawnableAsset };
 		AZ::EntityId SlotPoint; 
-		AZ_Printf("ItemWeapon", "Slot entity id: %d",SlotPoint);
 		CharacterInventoryBus::EventResult(SlotPoint, owner, &CharacterInventoryBus::Events::GetSlotAttach, 0);
+		AZ_Printf("ItemWeapon", "Slot entity id: %d",SlotPoint);
+		
 		//CharacterInventoryBus::EventResult()
 		mediator.SpawnAndParent(SpawnTicket, SlotPoint);
 		

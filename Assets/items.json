@@ -7,7 +7,7 @@
         "slot": "none",
         "rarity": 0.9,
         "weight": 1,
-        "asset": "",
+        "asset": "Assets/Prefabs/sword.prefab",
         "equip_event": "Equipped"
 
     },
@@ -28,7 +28,7 @@
         "protection": [ 1.0, 0.0, 0.0 ],
         "rarity": 0.8,
         "weight": 2,
-        "asset": "",
+        "asset": "Assets/Prefabs/sword.prefab",
         "equip_event": "Equipped"
     }
 ]
