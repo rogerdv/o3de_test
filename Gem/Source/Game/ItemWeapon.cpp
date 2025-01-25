@@ -3,8 +3,11 @@
 
 namespace keyw {
 
-	ItemWeapon::ItemWeapon() {
-
+	ItemWeapon::ItemWeapon(){
+		//BusConnect(SpawnTicket);
+		
+		//AzFramework::Scripts::SpawnableScriptNotificationsBus::BusConnect(SpawnTicket);
+		//AzFramework::Scripts::SpawnableScriptNotificationsBus::Connect(SpawnTicket);
 	}
 
 	ItemWeapon::~ItemWeapon() {
@@ -23,7 +26,7 @@ namespace keyw {
 	}
 
 	void ItemWeapon::Equip([[maybe_unused]] AZ::EntityId owner) {
-		
+		ItemOwner = owner;
 		AZ_Printf("ItemWeapon", "I have been equipped in %d!!", owner);
 		AZ::Data::AssetId assetId;
 		AZ::Data::AssetCatalogRequestBus::BroadcastResult(
@@ -47,7 +50,12 @@ namespace keyw {
 		//spawnableSystem->SpawnAllEntities(SpawnTicket);
 		
 		
-		ItemNotificationsBus::Event(owner, &ItemNotificationsBus::Events::OnItemEquipped, Id);
+		//ItemNotificationsBus::Event(owner, &ItemNotificationsBus::Events::OnItemEquipped, Id);
+	}
+
+	void ItemWeapon::OnSpawn(AzFramework::EntitySpawnTicket ticket, AZStd::vector<AZ::EntityId> entityList) {
+		AZ_Printf("ItemWeapon", "Spawning, calling equip event");
+		ItemNotificationsBus::Event(ItemOwner, &ItemNotificationsBus::Events::OnItemEquipped, Id);
 	}
 
 }

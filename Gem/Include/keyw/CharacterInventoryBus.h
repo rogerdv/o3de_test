@@ -11,7 +11,7 @@ namespace keyw {
 		virtual ~CharacterInventoryInterface() = default;
 		
 		virtual void ReceiveItem(const AZStd::string& ItemId) = 0;
-		virtual void EquipByIndex(AZStd::string ItemIndex, AZ::EntityId owner) = 0;
+		virtual void EquipByIndex(AZStd::string ItemIndex) = 0;
 		//virtual BaseItem* GetItem(AZStd::string ItemIndex) = 0;
 		virtual int TotalWeight() = 0;
 		virtual AZ::EntityId GetSlotAttach(int SlotIndex) = 0;

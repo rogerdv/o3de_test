@@ -74,7 +74,7 @@ namespace keyw {
 
 		//Item properties
 		AZStd::string Id;
-		//AZ::EntityId owner;
+		AZ::EntityId ItemOwner;
 		AZStd::string Category; //global item category (armor, consumable, weapon, component)
 		AZStd::string ItemType; //Specific item type: sword, shield
 		bool Equipable;

@@ -89,6 +89,7 @@ namespace keyw {
 		elem->ElementId = ItemId;
 		elem->item = new BaseItem();
 		
+		
 		keywRequestBus::BroadcastResult(elem->item, &keywRequestBus::Events::GetItem, ItemId);
 		
 		//AZ_Printf("ItemLoader", "Received Item ID: %s", elem->item->Id.c_str());
@@ -96,7 +97,7 @@ namespace keyw {
 
 	}
 
-	void CharacterInventory::EquipByIndex(AZStd::string ItemIndex, AZ::EntityId owner) {
+	void CharacterInventory::EquipByIndex(AZStd::string ItemIndex) {
 		//AZ_Printf("Inventory", "Equip %s in entity %d==%d", ItemIndex.c_str(), GetEntityId(), owner);
 		//first, find the item
 		for (const auto& element : items) {
@@ -106,7 +107,7 @@ namespace keyw {
 					//TODO, unequip
 				}
 				EquipSlots[element->item->Slot] = element->ElementId;
-				element->item->Equip(owner);
+				element->item->Equip(GetEntityId());
 			}
 		}
 	}
@@ -123,7 +124,7 @@ namespace keyw {
 	}
 
 	//Temporary, return first attachment always
-	AZ::EntityId CharacterInventory::GetSlotAttach([[maybe_unused]] int SlotIndex) {
+	AZ::EntityId CharacterInventory::GetSlotAttach(int SlotIndex) {
 		for (int i = 0; i < 9;i++) {
 			AZ_Printf("Inventory", "Slot entity # %d id: %d", i, AttachPoints[i]);
 		}

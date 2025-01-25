@@ -82,11 +82,11 @@ function PlayerController:SetNavmesh(NavmeshEntity)
 end
 
 function PlayerController:OnItemEquipped(ItemId)
-	--Debug.Log("Script received item equipped event for "..ItemId.." and my Id is "..tostring(self.entityId))
+	Debug.Log("Script received item equipped event for "..ItemId.." and my Id is "..tostring(self.entityId))
 	local me = CharacterComponentBus.Event.GetName(self.entityId)
 	--Debug.Log("And my name is "..me)
 	item = keywRequestBus.Broadcast.GetItem(ItemId)
-	--Debug.Log(item.TestSc)
+	self.EventScript = require("assets.scripts.equiptest")
 			
 	
 end
